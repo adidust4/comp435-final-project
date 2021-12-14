@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+        <title>High School Achievement Gaps - Data Visualizations</title>
+    </head>
+
+    <body>
+        
+        <h1>HIGH SCHOOL ACHIEVEMENT GAPS: </h1>
+        <h1>National & District Level Outcomes</h1>
+
+        <h2>National Urbanicity and Outcomes</h2>
+
+        <p>Over the last 100+ years, the United States have become increasingly urbanized. It is estimated that in 2021, 83% of the United State's population lives in some kind of urban area. With so many people living in an urban area, what does the remaining 17% experience? What do those in the <i>most</i> urban areas experience? We decided to look at this in terms of education, considered to be the great equalizer. Is education effected by district urbanicity? How might this great equalizer fail in consideration of locale type?</p>
+        <!-- First Data Viz - Urban Cloreopath Map of USA, 
+            embedded from observable notebook-->
+
+        <h3>Percent of Population Living in Urban Area</h3>
+
+        <img src="legendUSA.JPG" alt="Color Legend Showing Percent Urban" style="width:300px;height:50px;">
+        <div id="observablehq-viewof-yearAnimate-2fa2d155"></div>
+        <div id="observablehq-USA-2fa2d155"></div>
+        <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/5e306de95b6c7c96.js?v=3";
+        new Runtime().module(define, name => {
+        if (name === "viewof yearAnimate") return new Inspector(document.querySelector("#observablehq-viewof-yearAnimate-2fa2d155"));
+        if (name === "USA") return new Inspector(document.querySelector("#observablehq-USA-2fa2d155"));
+        });
+        </script>
+
+
+    </body>
+</html>
