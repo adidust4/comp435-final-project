@@ -18,6 +18,13 @@ h3 {
     color: Gray;
 }
 
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: Black;
+}
+
 p {
     font-family: 'Bellota Text', sans-serif;
     font-size: 16px;
