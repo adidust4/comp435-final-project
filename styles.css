@@ -9,6 +9,7 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 500;
+    text-align: center;
 }
 
 h3 {
@@ -16,6 +17,8 @@ h3 {
     font-size: 20px;
     font-weight: 500;
     color: Gray;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 h4 {
@@ -23,6 +26,8 @@ h4 {
     font-size: 18px;
     font-weight: 300;
     color: Black;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 p {
@@ -31,16 +36,22 @@ p {
     font-weight: 400;
     padding: 2em 0 2em 0;
     line-height: 3em;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .wrapper {
     display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 75fr;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .grid2 {
@@ -48,6 +59,8 @@ p {
     grid-template-columns: 1fr 1fr;
     padding: 3em 0 3em 0;
     grid-gap: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .halfgraph {
@@ -97,24 +110,23 @@ p {
 .radio1 {
     grid-column: 1;
     grid-row: 1;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .img1 {
     grid-column: 3;
     grid-row: 1;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 body {
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.container {
-    /* Center child horizontally*/
-    position: relative;
-}
-
-.child {
-    position: absolute;
-    left: 50%;
+.fullgraph {
+    margin-left: 50px;
+    margin-right: 50px;
 }

@@ -62,7 +62,7 @@
             
             <div class="section" id="nationalTitle">
                 <h2>National Urbanicity and Outcomes</h2>
-                <p>Over the last 100+ years, the United States have become increasingly urbanized. It is estimated that in 2021, 83% of the United State's population lives in some kind of urban area. With so many people living in an urban area, what does the remaining 17% experience? What do those in the <i>most</i> urban areas experience? We decided to look at this in terms of education, considered to be the great equalizer. Is education effected by district urbanicity? How might this great equalizer fail in consideration of locale type?</p>
+                <p text-align="center">Over the last 100+ years, the United States have become increasingly urbanized. It is estimated that in 2021, 83% of the United State's population lives in some kind of urban area. With so many people living in an urban area, what does the remaining 17% experience? What do those in the <i>most</i> urban areas experience? We decided to look at this in terms of education, considered to be the great equalizer. Is education effected by district urbanicity? How might this great equalizer fail in consideration of locale type?</p>
             </div>
 
             <div class="section" id="USAMap">
@@ -72,14 +72,14 @@
                     <div id="observablehq-viewof-yearAnimateUSA-2fa2d155" class="radio1"></div>
                     <img src="legendUSA.JPG" alt="Color Legend Showing Percent Urban" style="width:350px;height:50px;" class="img1">
                 </div>
-                <div id="observablehq-USA-2fa2d155"></div>
+                <div id="observablehq-USA-2fa2d155" class="fullgraph"></div>
             </div>
 
             <div class="section" id="barRace">
             <!-- Second Data Viz - Dropout Rate National Grouped Bar Chart Race-->
                 <h3>Dropout Rates of Various States</h3>
-                <div id="observablehq-viewof-yearAnimate-ed094e3d"></div>
-                <div id="observablehq-chartAnimate-ed094e3d"></div>
+                <div id="observablehq-viewof-yearAnimate-ed094e3d"  class="fullgraph"></div>
+                <div id="observablehq-chartAnimate-ed094e3d" class="fullgraph"></div>
             </div>
 
             <div class="section" id="minnesotaTitle">
@@ -90,14 +90,14 @@
             <div class="section" id="minnesotaMap">
             <!-- Third Data Viz - Locale Map of Minnesota School Districts-->
                 <h3>Minnesota School Districts By Locale Type</h3>
-                <div id="observablehq-districtMap-56a722dc"></div>
+                <div id="observablehq-districtMap-56a722dc" class="fullgraph"></div>
             </div>
             
 
             <div class="section" id="minnesotaInteract ">
             <!-- Fourth Data Viz - Large Interactive Bar Chart of Minnesota Outcomes-->
                 <h3>Minnesota School District Outcomes by Locale Type</h3>
-                <div id="observablehq-interactiveGraph-169a3cd2"></div>
+                <div id="observablehq-interactiveGraph-169a3cd2" class="fullgraph"></div>
                 <div id="observablehq-AllvsWhiteButton-169a3cd2"></div>
                 <div id="observablehq-button-169a3cd2"></div>
                 <div id="observablehq-DropoutButton-169a3cd2"></div>
@@ -112,16 +112,17 @@
                 <p>To get a closer look at urban-remote disparities, we look closer at two neighboring Minnesota school districts: Rockford School District and Wayzata School District. Wayzata is a small city district, whereas its neighbor Rockford is a rural fringe district. This means that despite their population densities, they have similar geography, size, and proximity to resources. This makes them a perfect way to look closer into the effects of districts that don't meet the extreme ends of urbanicity.</p>    
             </div>
             
-            <div class="section" id="MCA">
-                <!-- Sixth Data Viz - District Comparison Map-->
+            <div class="section" id="districtMap">
+            <!-- Sixth Data Viz - District Comparison Map-->
                 <h3>Neighboring District Map</h3>
-                <div id="observablehq-districtCompareMap-f75e0cf7"></div>
+                <div id="observablehq-districtCompareMap-f75e0cf7" class="fullgraph"></div>
+            </div>
+
+            <div class="section" id="MCA">
                 <p>The Minnesota Comprehensive Assessment (M.C.A) is taken by all 11th grade Minnesota students and provides details in performance in Reading, Math, and Science. The following graphs allow for a closer look at the percent of students in Wayzata and Rockford that Exceeds Standards, Meets Standards, Partially Meets Standards, and Do Not Meet Standards in the subject MCA test in 2018. Both districts perform similarly, but Rockford Exceeds standards less and Does Not Meet Standards more than Wayzata school district students.</p>
                 <!-- Seventh Data Viz - District Comparison MCA Scores-->
                 <h3>Percent of Students with MCA Level By District</h3>
-                <div justify-content='center'>
-                    <div id="observablehq-viewof-ratings-07b2c6c6"></div>
-                </div>
+                <div id="observablehq-viewof-ratings-07b2c6c6"></div>
                 <div class="wrapper">
                     <div id="observablehq-districtReading2018-07b2c6c6"></div>
                     <div id="observablehq-districtMath2018-07b2c6c6"></div>
@@ -165,7 +166,7 @@
 
         <script type="text/javascript">
             var myFullpage = new fullpage('#fullpage', {
-                anchors: ['title', 'nationalTitle', 'USAMap', 'barRace', 'minnesotaTitle', 'minnesotaMap', 'minnesotaInteract', 'districtTitle', 'MCA', 'funding', 'ACT', 'IHE', 'acknowledgments'],
+                anchors: ['title', 'nationalTitle', 'USAMap', 'barRace', 'minnesotaTitle', 'minnesotaMap', 'minnesotaInteract', 'districtTitle', 'districtMap', 'MCA', 'funding', 'ACT', 'IHE', 'acknowledgments'],
                 navigation: true,
                 navigationPosition: 'right'
             });
