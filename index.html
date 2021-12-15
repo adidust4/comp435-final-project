@@ -10,6 +10,39 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Montserrat:wght@400&display=swap" rel="stylesheet">
         <title>High School Achievement Gaps - Data Visualizations</title>
+
+        <!-- Scripts to embed observable notebook cells in webpage -->
+        
+        <script type="module">
+            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+            import define from "https://api.observablehq.com/d/5e306de95b6c7c96.js?v=3";
+            new Runtime().module(define, name => {
+                if (name === "viewof yearAnimateUSA") return new Inspector(document.querySelector("#observablehq-viewof-yearAnimateUSA-2fa2d155"));
+            if (name === "USA") return new Inspector(document.querySelector("#observablehq-USA-2fa2d155"));
+            if (name === "districtMap") return new Inspector(document.querySelector("#observablehq-districtMap-56a722dc"));
+            if (name === "districtCompareMap") return new Inspector(document.querySelector("#observablehq-districtCompareMap-f75e0cf7"));
+            if (name === "viewof ratings") return new Inspector(document.querySelector("#observablehq-viewof-ratings-07b2c6c6"));
+            if (name === "districtReading2018") return new Inspector(document.querySelector("#observablehq-districtReading2018-07b2c6c6"));
+            if (name === "districtMath2018") return new Inspector(document.querySelector("#observablehq-districtMath2018-07b2c6c6"));
+            if (name === "districtScience2018") return new Inspector(document.querySelector("#observablehq-districtScience2018-07b2c6c6"));
+            if (name === "districtFunding") return new Inspector(document.querySelector("#observablehq-districtFunding-99f30a37"));
+            if (name === "districtACTChart") return new Inspector(document.querySelector("#observablehq-districtACTChart-1983ab89"));
+            if (name === "districtIHE") return new Inspector(document.querySelector("#observablehq-districtIHE-099cb61a"));
+            });
+        </script>
+
+        <script type="module">
+            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+            import define from "https://api.observablehq.com/@ejharper14/minnesota-district-map-interaction-attempt.js?v=3";
+            new Runtime().module(define, name => {
+            if (name === "interactiveGraph") return new Inspector(document.querySelector("#observablehq-interactiveGraph-169a3cd2"));
+            if (name === "AllvsWhiteButton") return new Inspector(document.querySelector("#observablehq-AllvsWhiteButton-169a3cd2"));
+            if (name === "button") return new Inspector(document.querySelector("#observablehq-button-169a3cd2"));
+            if (name === "DropoutButton") return new Inspector(document.querySelector("#observablehq-DropoutButton-169a3cd2"));
+            if (name === "ACTButton") return new Inspector(document.querySelector("#observablehq-ACTButton-169a3cd2"));
+            if (name === "MCAButton") return new Inspector(document.querySelector("#observablehq-MCAButton-169a3cd2"));
+            });
+        </script>
     </head>
 
     <body>
@@ -32,14 +65,7 @@
             <img src="legendUSA.JPG" alt="Color Legend Showing Percent Urban" style="width:350px;height:50px;" class="img1">
         </div>
         <div id="observablehq-USA-2fa2d155"></div>
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/5e306de95b6c7c96.js?v=3";
-        new Runtime().module(define, name => {
-        if (name === "viewof yearAnimateUSA") return new Inspector(document.querySelector("#observablehq-viewof-yearAnimateUSA-2fa2d155"));
-        if (name === "USA") return new Inspector(document.querySelector("#observablehq-USA-2fa2d155"));
-        });
-        </script>
+        
 
         <!-- Second Data Viz - Dropout Rate National Grouped Bar Chart Race-->
 
@@ -50,13 +76,6 @@
         <!-- Third Data Viz - Locale Map of Minnesota School Districts-->
         <h3>Minnesota School Districts By Locale Type</h3>
         <div id="observablehq-districtMap-56a722dc"></div>
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/5e306de95b6c7c96@1335.js?v=3";
-        new Runtime().module(define, name => {
-        if (name === "districtMap") return new Inspector(document.querySelector("#observablehq-districtMap-56a722dc"));
-        });
-        </script>
 
         <!-- Fourth Data Viz - Large Interactive Bar Chart of Minnesota Outcomes-->
         <h3>Minnesota School District Outcomes by Locale Type</h3>
@@ -66,18 +85,6 @@
         <div id="observablehq-DropoutButton-169a3cd2"></div>
         <div id="observablehq-ACTButton-169a3cd2"></div>
         <div id="observablehq-MCAButton-169a3cd2"></div>
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/@ejharper14/minnesota-district-map-interaction-attempt.js?v=3";
-        new Runtime().module(define, name => {
-        if (name === "interactiveGraph") return new Inspector(document.querySelector("#observablehq-interactiveGraph-169a3cd2"));
-        if (name === "AllvsWhiteButton") return new Inspector(document.querySelector("#observablehq-AllvsWhiteButton-169a3cd2"));
-        if (name === "button") return new Inspector(document.querySelector("#observablehq-button-169a3cd2"));
-        if (name === "DropoutButton") return new Inspector(document.querySelector("#observablehq-DropoutButton-169a3cd2"));
-        if (name === "ACTButton") return new Inspector(document.querySelector("#observablehq-ACTButton-169a3cd2"));
-        if (name === "MCAButton") return new Inspector(document.querySelector("#observablehq-MCAButton-169a3cd2"));
-        });
-        </script>
 
 
         <!-- Fifth Data Viz - Interactive Minnesota Map?-->
@@ -89,13 +96,6 @@
         <!-- Sixth Data Viz - District Comparison Map-->
         <h3>Neighboring District Map</h3>
         <div id="observablehq-districtCompareMap-f75e0cf7"></div>
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/5e306de95b6c7c96@1351.js?v=3";
-        new Runtime().module(define, name => {
-        if (name === "districtCompareMap") return new Inspector(document.querySelector("#observablehq-districtCompareMap-f75e0cf7"));
-        });
-        </script>
 
         <p>The Minnesota Comprehensive Assessment (M.C.A) is taken by all 11th grade Minnesota students and provides details in performance in Reading, Math, and Science. The following graphs allow for a closer look at the percent of students in Wayzata and Rockford that Exceeds Standards, Meets Standards, Partially Meets Standards, and Do Not Meet Standards in the subject MCA test in 2018. Both districts perform similarly, but Rockford Exceeds standards less and Does Not Meet Standards more than Wayzata school district students.</p>
         
@@ -110,17 +110,6 @@
             <div id="observablehq-districtScience2018-07b2c6c6"></div>
         </div>
 
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/5e306de95b6c7c96.js?v=3";
-        new Runtime().module(define, name => {
-        if (name === "viewof ratings") return new Inspector(document.querySelector("#observablehq-viewof-ratings-07b2c6c6"));
-        if (name === "districtReading2018") return new Inspector(document.querySelector("#observablehq-districtReading2018-07b2c6c6"));
-        if (name === "districtMath2018") return new Inspector(document.querySelector("#observablehq-districtMath2018-07b2c6c6"));
-        if (name === "districtScience2018") return new Inspector(document.querySelector("#observablehq-districtScience2018-07b2c6c6"));
-        });
-        </script>
-
 
         <!-- Eigth Data Viz - District Comparison Funding Bar Chart-->
 
@@ -130,14 +119,6 @@
             <p class="halftext">We also wanted to look at per-student funding and expenses in these two neighboring districts. Specifically, we were interested in how neighboring geographies might have different per-student revenues, expenditures, and net totals based on their different level of Urbanicity. Both districts have a net per-student between $300 and $500, but Wayzata makes more revenue per-student and has greater expenditures per student.</p>
         </div>
 
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/5e306de95b6c7c96.js?v=3";
-        new Runtime().module(define, name => {
-        if (name === "districtFunding") return new Inspector(document.querySelector("#observablehq-districtFunding-99f30a37"));
-        });
-        </script>
-
         
         <!-- Ninth Data Viz - District Comparison ACT Score Bar Chart-->
         <div class="grid2">
@@ -145,14 +126,6 @@
             <div id="observablehq-districtACTChart-1983ab89" class="halfgraphopposite"></div>
             <p class="halftextopposite">The ACT is somewhat of a proxy for college-readiness, since it is a required test for many college admissions process. We compared Wayzata, Rockford, and the entirety of Minnesota, and found Rockford to be near average, whereas Wayzata was about 4 points more than the Minnesota average on this test.</p>
         </div>
-        
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/5e306de95b6c7c96.js?v=3";
-        new Runtime().module(define, name => {
-        if (name === "districtACTChart") return new Inspector(document.querySelector("#observablehq-districtACTChart-1983ab89"));
-        });
-        </script>
 
 
         <!-- Tenth Data Viz - District Comparison IHE enrollment Bar Chart-->
@@ -164,14 +137,6 @@
             </div>
             <div id="observablehq-districtIHE-099cb61a" class="halfgraph"></div>
         </div>
-
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/5e306de95b6c7c96.js?v=3";
-        new Runtime().module(define, name => {
-        if (name === "districtIHE") return new Inspector(document.querySelector("#observablehq-districtIHE-099cb61a"));
-        });
-        </script>
 
     </body>
 </html>
