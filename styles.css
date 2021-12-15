@@ -103,3 +103,18 @@ p {
     grid-column: 3;
     grid-row: 1;
 }
+
+body {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.container {
+    /* Center child horizontally*/
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    left: 50%;
+}
