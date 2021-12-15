@@ -40,6 +40,12 @@ p {
     margin-right: 50px;
 }
 
+em {
+    font-family: 'Bellota Text', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
 .wrapper {
     display: flex;
     margin-left: 50px;
@@ -49,7 +55,6 @@ p {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 75fr;
     margin-left: 50px;
     margin-right: 50px;
 }
