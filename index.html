@@ -17,6 +17,8 @@
         <h1>HIGH SCHOOL ACHIEVEMENT GAPS: </h1>
         <h1>National & District Level Outcomes</h1>
 
+        <br> <br>
+
         <h2>National Urbanicity and Outcomes</h2>
 
         <p>Over the last 100+ years, the United States have become increasingly urbanized. It is estimated that in 2021, 83% of the United State's population lives in some kind of urban area. With so many people living in an urban area, what does the remaining 17% experience? What do those in the <i>most</i> urban areas experience? We decided to look at this in terms of education, considered to be the great equalizer. Is education effected by district urbanicity? How might this great equalizer fail in consideration of locale type?</p>
@@ -25,8 +27,10 @@
 
         <h3>Percent of Population Living in Urban Area</h3>
 
-        <img src="legendUSA.JPG" alt="Color Legend Showing Percent Urban" style="width:300px;height:50px;">
-        <div id="observablehq-viewof-yearAnimateUSA-2fa2d155"></div>
+        <div class="grid">
+            <div id="observablehq-viewof-yearAnimateUSA-2fa2d155" class="radio1"></div>
+            <img src="legendUSA.JPG" alt="Color Legend Showing Percent Urban" style="width:350px;height:50px;" class="img1">
+        </div>
         <div id="observablehq-USA-2fa2d155"></div>
         <script type="module">
         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -97,10 +101,15 @@
         
         <!-- Seventh Data Viz - District Comparison MCA Scores-->
         <h3>Percent of Students with MCA Level By District</h3>
-        <div id="observablehq-viewof-ratings-07b2c6c6"></div>
-        <div id="observablehq-districtReading2018-07b2c6c6"></div>
-        <div id="observablehq-districtMath2018-07b2c6c6"></div>
-        <div id="observablehq-districtScience2018-07b2c6c6"></div>
+        <div justify-content='center'>
+            <div id="observablehq-viewof-ratings-07b2c6c6"></div>
+        </div>
+        <div class="wrapper">
+            <div id="observablehq-districtReading2018-07b2c6c6"></div>
+            <div id="observablehq-districtMath2018-07b2c6c6"></div>
+            <div id="observablehq-districtScience2018-07b2c6c6"></div>
+        </div>
+
         <script type="module">
         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
         import define from "https://api.observablehq.com/d/5e306de95b6c7c96.js?v=3";
@@ -113,11 +122,14 @@
         </script>
 
 
-        <p>We also wanted to look at per-student funding and expenses in these two neighboring districts. Specifically, we were interested in how neighboring geographies might have different per-student revenues, expenditures, and net totals based on their different level of Urbanicity. Both districts have a net per-student between $300 and $500, but Wayzata makes more revenue per-student and has greater expenditures per student.</p>
-
         <!-- Eigth Data Viz - District Comparison Funding Bar Chart-->
-        <h3>Per-Student District Funding</h3>
-        <div id="observablehq-districtFunding-99f30a37"></div>
+
+        <div class="grid2">
+            <h3 class="halftitle">Per-Student District Funding</h3>
+            <div id="observablehq-districtFunding-99f30a37" class="halfgraph"></div>
+            <p class="halftext">We also wanted to look at per-student funding and expenses in these two neighboring districts. Specifically, we were interested in how neighboring geographies might have different per-student revenues, expenditures, and net totals based on their different level of Urbanicity. Both districts have a net per-student between $300 and $500, but Wayzata makes more revenue per-student and has greater expenditures per student.</p>
+        </div>
+
         <script type="module">
         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
         import define from "https://api.observablehq.com/d/5e306de95b6c7c96.js?v=3";
@@ -126,11 +138,14 @@
         });
         </script>
 
-        <p>The ACT is somewhat of a proxy for college-readiness, since it is a required test for many college admissions process. We compared Wayzata, Rockford, and the entirety of Minnesota, and found Rockford to be near average, whereas Wayzata was about 4 points more than the Minnesota average on this test.</p>
         
         <!-- Ninth Data Viz - District Comparison ACT Score Bar Chart-->
-        <h3>Composite ACT Scores</h3>
-        <div id="observablehq-districtACTChart-1983ab89"></div>
+        <div class="grid2">
+            <h3 class="halftitleopposite">Composite ACT Scores</h3>
+            <div id="observablehq-districtACTChart-1983ab89" class="halfgraphopposite"></div>
+            <p class="halftextopposite">The ACT is somewhat of a proxy for college-readiness, since it is a required test for many college admissions process. We compared Wayzata, Rockford, and the entirety of Minnesota, and found Rockford to be near average, whereas Wayzata was about 4 points more than the Minnesota average on this test.</p>
+        </div>
+        
         <script type="module">
         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
         import define from "https://api.observablehq.com/d/5e306de95b6c7c96.js?v=3";
@@ -139,11 +154,17 @@
         });
         </script>
 
-        <p>Since college is a major indicator of the social norms and responsibilities a community feels towards education, it is an excellent way to gauge how rural versus urban areas view education in their attempts to pursue it. Here we see that Rockford has slightly less than the Minnesota average percent enrolling in an institution of higher education within 16 months of graduation, whereas around 20% more than average enroll in higher education from Wayzata.</p>
 
         <!-- Tenth Data Viz - District Comparison IHE enrollment Bar Chart-->
-        <h3>16 Month Higher Education Enrollment Rates</h3>
-        <div id="observablehq-districtIHE-099cb61a"></div>
+        
+        <div class="grid2">
+            <h3 class="halftitle">16 Month Higher Education Enrollment Rates</h3>
+            <div class="halftext">
+                <p>Since college is a major indicator of the social norms and responsibilities a community feels towards education, it is an excellent way to gauge how rural versus urban areas view education in their attempts to pursue it. Here we see that Rockford has slightly less than the Minnesota average percent enrolling in an institution of higher education within 16 months of graduation, whereas around 20% more than average enroll in higher education from Wayzata.</p>
+            </div>
+            <div id="observablehq-districtIHE-099cb61a" class="halfgraph"></div>
+        </div>
+
         <script type="module">
         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
         import define from "https://api.observablehq.com/d/5e306de95b6c7c96.js?v=3";

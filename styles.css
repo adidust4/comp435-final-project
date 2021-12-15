@@ -29,4 +29,77 @@ p {
     font-family: 'Bellota Text', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    padding: 2em 0 2em 0;
+    line-height: 3em;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 75fr;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3em 0 3em 0;
+    grid-gap: 10px;
+}
+
+.halfgraph {
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+    justify-items: center;
+    align-items: center;
+}
+
+.halftext {
+    display: flex;
+    grid-column: 1;
+    grid-row: 2;
+    justify-items: center;
+    align-items: center;
+}
+
+.halftitle {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    align-items: end;
+    justify-items: end;
+}
+
+.halfgraphopposite {
+    display: flex;
+    grid-column: 1;
+    grid-row: 2;
+    justify-items: center;
+    align-items: center;
+}
+
+.halftextopposite {
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.halftitleopposite {
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.radio1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.img1 {
+    grid-column: 3;
+    grid-row: 1;
 }
