@@ -12,7 +12,7 @@
         <title>High School Achievement Gaps - Data Visualizations</title>
 
         <!-- Scripts to embed observable notebook cells in webpage -->
-        
+
         <script type="module">
             import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
             import define from "https://api.observablehq.com/d/5e306de95b6c7c96.js?v=3";
@@ -28,6 +28,8 @@
             if (name === "districtFunding") return new Inspector(document.querySelector("#observablehq-districtFunding-99f30a37"));
             if (name === "districtACTChart") return new Inspector(document.querySelector("#observablehq-districtACTChart-1983ab89"));
             if (name === "districtIHE") return new Inspector(document.querySelector("#observablehq-districtIHE-099cb61a"));
+            if (name === "chartAnimate") return new Inspector(document.querySelector("#observablehq-chartAnimate-ed094e3d"));
+            if (name === "viewof yearAnimate") return new Inspector(document.querySelector("#observablehq-viewof-yearAnimate-ed094e3d"));
             });
         </script>
 
@@ -68,6 +70,9 @@
         
 
         <!-- Second Data Viz - Dropout Rate National Grouped Bar Chart Race-->
+        <h3>Dropout Rates of Various States</h3>
+        <div id="observablehq-viewof-yearAnimate-ed094e3d"></div>
+        <div id="observablehq-chartAnimate-ed094e3d"></div>
 
         <h2>Minnesota Outcomes</h2>
 
