@@ -30,8 +30,8 @@
             if (name === "districtFunding") return new Inspector(document.querySelector("#observablehq-districtFunding-99f30a37"));
             if (name === "districtACTChart") return new Inspector(document.querySelector("#observablehq-districtACTChart-1983ab89"));
             if (name === "districtIHE") return new Inspector(document.querySelector("#observablehq-districtIHE-099cb61a"));
-            if (name === "chartAnimate") return new Inspector(document.querySelector("#observablehq-chartAnimate-ed094e3d"));
-            if (name === "viewof yearAnimate") return new Inspector(document.querySelector("#observablehq-viewof-yearAnimate-ed094e3d"));
+            if (name === "viewof yearAnimate") return new Inspector(document.querySelector("#observablehq-viewof-yearAnimate-484a71f1"));
+            if (name === "chartAnimate") return new Inspector(document.querySelector("#observablehq-chartAnimate-484a71f1"));
             });
         </script>
 
@@ -48,7 +48,6 @@
             });
         </script>
     </head>
-
 
 
 
@@ -78,8 +77,8 @@
             <div class="section" id="barRace" height=100vh>
             <!-- Second Data Viz - Dropout Rate National Grouped Bar Chart Race-->
                 <h3>Dropout Rates of Various States</h3>
-                <div id="observablehq-viewof-yearAnimate-ed094e3d"  class="fullgraph"></div>
-                <div id="observablehq-chartAnimate-ed094e3d" class="fullgraph"></div>
+                <div id="observablehq-viewof-yearAnimate-484a71f1" class="fullgraph"></div>
+                <div id="observablehq-chartAnimate-484a71f1" class="fullgraph"></div>
             </div>
 
             <div class="section" id="minnesotaTitle" height=100vh>
@@ -153,7 +152,7 @@
                 <div class="grid2">
                     <h3 class="halftitle">16 Month Higher Education Enrollment Rates</h3>
                     <div class="halftext">
-                        <p>Since college is a major indicator of the social norms and responsibilities a community feels towards education, it is an excellent way to gauge how rural versus urban areas view education in their attempts to pursue it. Here we see that Rockford has slightly less than the Minnesota average percent enrolling in an institution of higher education within 16 months of graduation, whereas around 20% more than average enroll in higher education from Wayzata.</p>
+                        <p>Since college is a major indicator of the social norms and responsibilities a community feels towards education, it is an excellent way to gauge how rural versus urban areas view education in their attempts to pursue it. Here we see that Rockford has slightly less than the Minnesota average percent enrolling in an institution of higher education within 16 months of graduation, whereas around <b>20%</b> more than average enroll in higher education from Wayzata.</p>
                     </div>
                     <div id="observablehq-districtIHE-099cb61a" class="halfgraph"></div>
                 </div>
@@ -167,7 +166,6 @@
         <!-- Script that allows for right dot navigation through sections -->
         <script type="text/javascript">
             var myFullpage = new fullpage('#fullpage', {
-                anchors: ['title', 'nationalTitle', 'USAMap', 'barRace', 'minnesotaTitle', 'minnesotaMap', 'minnesotaInteract', 'districtTitle', 'districtMap', 'MCA', 'funding', 'ACT', 'IHE', 'acknowledgments'],
                 navigation: true,
                 navigationPosition: 'right'
             });
