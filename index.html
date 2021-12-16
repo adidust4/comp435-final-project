@@ -32,6 +32,7 @@
             if (name === "districtIHE") return new Inspector(document.querySelector("#observablehq-districtIHE-099cb61a"));
             if (name === "viewof yearAnimate") return new Inspector(document.querySelector("#observablehq-viewof-yearAnimate-484a71f1"));
             if (name === "chartAnimate") return new Inspector(document.querySelector("#observablehq-chartAnimate-484a71f1"));
+            if (name === "animate") return new Inspector(document.querySelector("#observablehq-animate-8e5aaa95"));
             });
         </script>
 
@@ -79,6 +80,7 @@
                 <h3>Dropout Rates of Various States</h3>
                 <div id="observablehq-viewof-yearAnimate-484a71f1" class="fullgraph"></div>
                 <div id="observablehq-chartAnimate-484a71f1" class="fullgraph"></div>
+                <div id="observablehq-animate-5e5d008c"></div>
             </div>
 
             <div class="section" id="minnesotaTitle" height=100vh>
@@ -91,21 +93,33 @@
                 <h3>Minnesota School Districts By Locale Type</h3>
                 <div id="observablehq-districtMap-56a722dc" class="fullgraph"></div>
             </div>
+
+            <div class="section" id="interactDescript" height=100vh>
+                <p line-height= "0em;" font-size= "12px;">Using Minnesota as a case study, how might locale influence high school outcomes like dropout rates and test scores? How might locale influence different groups of high schoolers differently? The following interactive graphic attempts to explore those questions. 
+
+                    When comparing the average outcomes of four categories of locale (Rural school districts, Town school districts, Suburb school districts, and City school districts), differences are noticeable, but differences that persist across all three outcomes aren't.  Explore the data yourself: use the dropdown menu to switch between the three outcomes to see how each locale performs on average.
+                    
+                    When you dig into more precise locale categories, however, consistent trends are more noticeable. When you look at rural and town school districts, remote and/or distant districts consistently do worse than "fringe" districts (districts that are near suburban or urban areas), and large city school districts consistently do much worse than small and mid-size city districts. It seems that the "extremes" (large city school districts and remote school districts) suffer. Explore the data yourself by toggling between the locale category choices, as well as continuing to switch between outcomes as desired.
+                    
+                    Of course, not all students in each school district have access to the same resources. Specifically, race-based inequities are very prevalent in the education system. While exploring at the dropout outcome, add further comparison by checking & unchecking the white student dropout checkbox. It's clear that race-based outcome differences not only exist, and not only differ based on locale, but also are the most pronounced in the suffering areas I mentioned above -- large city districts and remote rural & town districts.
+                    
+                    It's clear, from this data, that specificity matters. Minnesota as a state may have certain test scores or dropout rates, but a rural school district performs differently than a suburb school district, a remote rural differently than a fringe rural. Digging deeper, white students have different dropout rates than students as a whole.
+                    
+                    Use all of the buttons in combination with each other to draw conclusions of your own. Hover your mouse on any bar of choice to reveal more details about that category's data.</p>
+            </div>
             
 
             <div class="section" id="minnesotaInteract" height=100vh>
             <!-- Fourth Data Viz - Large Interactive Bar Chart of Minnesota Outcomes-->
                 <h3>Minnesota School District Outcomes by Locale Type</h3>
+                <div id="observablehq-DropoutButton-169a3cd2" class="radio1"></div>
+                <div id="observablehq-button-169a3cd2" class="radio1"></div>
+                <div id="observablehq-ACTButton-169a3cd2" class="radio1"></div>
+                <div id="observablehq-MCAButton-169a3cd2" class="radio1"></div>
+                <div id="observablehq-AllvsWhiteButton-169a3cd2" class="radio1"></div>
                 <div id="observablehq-interactiveGraph-169a3cd2" class="fullgraph"></div>
-                <div id="observablehq-AllvsWhiteButton-169a3cd2"></div>
-                <div id="observablehq-button-169a3cd2"></div>
-                <div id="observablehq-DropoutButton-169a3cd2"></div>
-                <div id="observablehq-ACTButton-169a3cd2"></div>
-                <div id="observablehq-MCAButton-169a3cd2"></div>
             </div>
             
-            <!-- Fifth Data Viz - Interactive Minnesota Map?-->
-
             <div class="section" id="districtTitle" height=100vh>
                 <h2>Neighboring Minnesota School Districts</h2>
                 <p><em>T</em>o get a closer look at urban-remote disparities, we look closer at two neighboring Minnesota school districts: Rockford School District and Wayzata School District. Wayzata is a small city district, whereas its neighbor Rockford is a rural fringe district. This means that despite their population densities, they have similar geography, size, and proximity to resources. This makes them a perfect way to look closer into the effects of districts that don't meet the extreme ends of urbanicity.</p>    
@@ -160,6 +174,20 @@
             
             <div class="section" id="acknowledgments" height=100vh>
                 <h2>Acknowledgments</h2>
+                <p>Authors: A'di Dust '23 & Emily Harper '22
+                    
+                Special thanks to Lauren Milne, for guiding us throughout this process. 
+                
+                The data visualizations on this website were created using the D3 JavaScript library, created by Mike Bostock. Source code can be found here: (link a consolidated observable notebook?)
+                
+                Sources:</p>
+                
+                <ul>State-level urban percentage of the population, 1900-2010: U.S. Census data, compiled by the Iowa State University Iowa Community Indicators Program, https://www.icip.iastate.edu/tables/population/urban-pct-states </ul>
+                <ul>National district-level dropout data, 1997-2010: Common Core of Data (CCD) Local Education Agency (School District) Universe Survey Dropout and Completion Data, compiled by the National Center for Education Statistics (NCES), https://nces.ed.gov/ccd/drpagency.asp</ul>
+                <ul>Minnesota school district locales, 2019-2020: CCD and Private School Survey (PSS) data, compiled by the NCES and retrieved through their Elementary / Secondary Information System web application: https://nces.ed.gov/ccd/elsi/tableGenerator.aspx, combined with the NCES Locale Lookup tool to find any additional district data: https://nces.ed.gov/programs/maped/LocaleLookup/</ul>
+                <ul>Minnesota school district-level graduation data, ACT data, and MCA data, 2017-2018: Minnesota Department of Education, https://public.education.mn.gov/MDEAnalytics/DataTopic.jsp?TOPICID=2, https://public.education.mn.gov/MDEAnalytics/DataTopic.jsp?TOPICID=87, https://public.education.mn.gov/MDEAnalytics/DataTopic.jsp?TOPICID=1</ul>
+                <ul>Minnesota school district-level funding:</ul>
+                <ul>Minnesota school district-level 16-month higher education enrollment rates:</ul>
             </div>
         </div>
 
