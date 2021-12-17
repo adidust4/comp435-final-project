@@ -40,6 +40,24 @@ p {
     margin-right: 50px;
 }
 
+.pcondensed {
+    font-family: 'Bellota Text', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0em 0 0em 0;
+    line-height: 1.5em;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+ul {
+    font-family: 'Bellota Text', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 em {
     font-family: 'Bellota Text', sans-serif;
     font-weight: 400;
