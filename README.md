@@ -1,7 +1,7 @@
 # HIGH SCHOOL ACHIEVEMENT GAPS: National & District Level Outcomes
 Website: https://adidust4.github.io/comp435-final-project/
 
-Observable Notebook: observablehq.com/@58d721f61cd5dec7/high-school-achievement-gaps-national-minnesota-outcomes
+Observable Notebook: observablehq.com/@58d721f61cd5dec7/high-school-achievement-gaps-national-minnesota-outcomes 
 
 This website uses exploratory and explanatory visualizations to show trends among national high school education outcomes with respect to school district locale type. The project seeks to allow a way to explore if and how urbanity of a school district might effect students' education. The customized visualizations allow for user interaction to view what they find interesting/important.
 
