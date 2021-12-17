@@ -64,4 +64,5 @@ Minnesota school district-level 16-month higher education enrollment rates: Minn
 - https://observablehq.com/d/6f217190c750fc02
 
 ## License
-_____________________________________________________________________
+
+MIT © A'di Dust & Emily Harper
